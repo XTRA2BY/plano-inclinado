@@ -3,7 +3,7 @@ function calcular() {
     const mu = parseFloat(document.getElementById('coeficiente').value);
     const theta = parseFloat(document.getElementById('angulo').value);
     const theta_rad = theta * Math.PI / 180;
-    const g = 9.8;
+    const g = 9.81;
     const P = Math.round(masa * g * 100) / 100;
     const Px = Math.round(P * Math.sin(theta_rad) * 100) / 100;
     const Py = Math.round(P * Math.cos(theta_rad) * 100) / 100;
