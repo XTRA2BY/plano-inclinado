@@ -8,10 +8,6 @@ body {
     font-family: "montserrat", sans-serif;
 }
 
-h1 {
-    text-align: center;
-}
-
 form {
     display: flex;
     flex-direction: row; 
@@ -78,6 +74,7 @@ button:hover {
 
 h1, h2 {
     color: #05060f;
+    text-align: center;
 }
 
 .input::-webkit-outer-spin-button,
