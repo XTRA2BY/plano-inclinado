@@ -1,0 +1,91 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
+    margin: 0;
+    font-family: "montserrat", sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    gap: 1rem; 
+}
+
+.input-group-container {
+    display: flex; 
+    justify-content: center; 
+    gap: 1rem; 
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.input-group input {
+    max-width: 190px;
+    height: 44px;
+    background-color: #0f08050a;
+    border-radius: .5rem;
+    padding: 0 1rem;
+    border: 2px solid transparent;
+    font-size: 1rem;
+    transition: border-color .3s cubic-bezier(.25,.01,.25,1) 0s, color .3s cubic-bezier(.25,.01,.25,1) 0s, background .2s cubic-bezier(.25,.01,.25,1) 0s;
+}
+
+.label {
+    font-size: .9rem;
+    font-weight: bold;
+    color: #04128999;
+    transition: color .3s cubic-bezier(.25,.01,.25,1) 0s;
+    font-family: "Montserrat", sans-serif;
+}
+
+.input:hover, .input:focus, .input-group:hover .input {
+    outline: none;
+    border-color: #05060f;
+}
+
+.input-group:hover .label, .input:focus + .label {
+    color: #05060fc2;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #05060f;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color .3s;
+    font-family: "montserrat";
+    
+}
+
+button:hover {
+    background-color: #333;
+}
+
+h1, h2 {
+    color: #05060f;
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input[type=number] {
+    -moz-appearance: textfield;
+}
